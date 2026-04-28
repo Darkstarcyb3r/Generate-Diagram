@@ -1,0 +1,27 @@
+# Environment & secrets
+.env
+
+# PaperBanana runtime files
+method.txt
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude
+.claude/

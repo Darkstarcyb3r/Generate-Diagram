@@ -1,0 +1,83 @@
+PAPERBANANA STYLE TEMPLATE
+===========================
+
+DIAGRAM TYPE
+-------------
+Claude selects the most appropriate diagram type based on the content
+(examples: process flowchart, neural network architecture, container diagram,
+layered stack, system architecture). Choice should always serve clarity.
+
+SUBJECT
+--------
+Derived from the user's description or uploaded paper. Preserve all original
+information, nodes, text, and connections — scientific accuracy is non-negotiable.
+Never omit or simplify content for aesthetic reasons.
+
+STYLE & THEME
+--------------
+Minimal. Academic conference style. Clean, breathable, sophisticated —
+like a figure from a top-tier systems or HCI publication.
+
+STRICT COLOR PALETTE — use ONLY these. No other colors are permitted.
+----------------------------------------------------------------------
+Background:      #FFFFFF   (white — always)
+Gradient 1:      #7FBDFF → #6E00BF   (sky blue → deep purple)
+Solid neon:      #D8FF1B              (single high-emphasis accent only)
+Gradient 2:      #AFDFB3 → #E7F1DC   (mint → pale green)
+Connectors:      #606060              (all arrows and connector lines)
+Label bg:        #0F1226              (all title/header pill backgrounds)
+Label text:      #FFFFFF              (all title/header text)
+Body text:       neutral grey         (never black, never bold)
+
+Do not use peach, coral, orange, yellow, red, pink, brown, or any hue
+outside the palette above. No additional gradients or tints.
+
+TYPOGRAPHY
+-----------
+Font family:     Helvetica (or Helvetica Neue) — light weight throughout
+Title:           14pt, white on #0F1226 background shape
+Body text:       10pt, grey, never bold
+Small labels:    grey, generous letter-spacing on small caps
+Line height:     generous throughout
+
+LAYOUT RULES
+-------------
+Flow direction:  left-to-right or top-to-bottom (choose what fits content)
+Element spacing: minimum 25px between all elements
+Alignment:       strict grid — all elements aligned to a consistent grid
+White space:     generous — never crowded
+
+ICONS & SHAPES
+---------------
+Icon style:      flat line-art icons, hairline geometric, one concept per icon
+Stroke weight:   2px for all icons, boxes, and containers
+Decision nodes:  diamond shape
+Shape fills:     gradient 1, solid neon, or gradient 2 — nothing else
+Drop shadows:    soft, low-opacity, slight downward offset on all major shapes
+                 and containers (subtle 3D lift — never cartoonish)
+Container depth: lower-opacity fill layer beneath each major container
+                 to suggest depth without skeuomorphism
+Icons sit inside a small white rounded square or circle with a 2px grey border
+
+CONNECTORS
+-----------
+Color:           #606060
+Weight:          0.5–1pt hairline
+Arrowheads:      small, clean triangular
+
+CRUCIAL CONSTRAINT
+-------------------
+Preserve ALL original information from the source material. Every node,
+label, connection, and annotation must appear in the output. Do not
+simplify, merge, or drop content. Scientific and technical accuracy
+takes priority over layout aesthetics.
+
+HOW TO USE THIS TEMPLATE
+--------------------------
+Do not append this template to the diagram prompt. Instead, read the diagram
+content and this template together and write a single unified prompt where the
+style is fully integrated into the description. Every visual decision — color,
+type size, spacing, icon style, shadow, connector weight — should be expressed
+as a concrete instruction woven into the prompt itself, not listed separately.
+The output should read as one coherent, specific, style-aware prompt that
+PaperBanana can act on directly.

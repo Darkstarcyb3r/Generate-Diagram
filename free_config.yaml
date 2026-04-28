@@ -1,0 +1,11 @@
+vlm:
+  provider: gemini
+  model: gemini-2.5-flash
+
+image:
+  provider: google_imagen
+  model: gemini-2.5-flash-image
+
+pipeline:
+  refinement_iterations: 3
+  output_resolution: 4k
