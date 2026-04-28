@@ -1,6 +1,6 @@
 # PaperBanana Diagram Generator
 
-An MCP server that turns a plain-text diagram description into a styled, print-quality figure — automatically.
+An MCP server that leverages Claude Code and Gemini Nano Banana to go from a working academic paper to a plain-text prompt then diagram description for a consitantly styled, print-quality figure — automatically.
 
 **Pipeline:** Claude enriches your prompt with the style template → PaperBanana generates the image → output is upscaled 3x to 4K at 300 DPI.
 
@@ -92,11 +92,12 @@ generate_diagram(
 )
 ```
 
-**Tips for good results:**
+**Tips for good results if diagram needs refinement:**
 - List every element explicitly — nodes, labels, connections, sections
 - Describe the layout (top-to-bottom, left-to-right, two sections, etc.)
 - Do not leave anything implicit — PaperBanana will invent content to fill gaps
 - The style template handles all visual decisions; focus your prompt on structure and content
+- Do not force style because it will start to break the logic of Nano Banana
 
 Output lands in `outputs/` as a timestamped run folder containing the PNG and 4K upscale.
 
@@ -111,7 +112,7 @@ Edit `diagram_style_template.txt` to change the visual language. The current tem
 - Helvetica Light, 14pt titles on `#0F1226` pill backgrounds, 10pt grey body text
 - 2px stroke icons, soft drop shadows, 25px grid spacing
 
-The style is **integrated** into every prompt by Claude — not appended. Claude reads both your description and the style file and writes a single unified prompt for PaperBanana.
+The style is **integrated** into every prompt by Claude — not appended. Claude reads both your description and the style file and writes a single unified prompt for PaperBanana. If you want to change this, then change the style document for your own needs.
 
 ---
 
