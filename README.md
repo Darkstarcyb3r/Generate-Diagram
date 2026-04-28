@@ -1,6 +1,6 @@
 # PaperBanana Diagram Generator
 
-An MCP server that leverages Claude Code and Gemini Nano Banana to go from a working academic paper to a plain-text prompt then diagram description for a consitantly styled, print-quality figure — automatically.
+An MCP server that leverages Claude Code and Gemini Nano Banana to go from a working academic paper to a plain-text prompt then diagram description for a consistently styled, print-quality figure — automatically.
 
 **Pipeline:** Claude enriches your prompt with the style template → PaperBanana generates the image → output is upscaled 3x to 4K at 300 DPI.
 
@@ -45,8 +45,8 @@ pip install anthropic python-dotenv pillow
 **1. Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Darkstarcyb3r/Generate-Diagram.git
+cd Generate-Diagram
 ```
 
 **2. Add your API keys**
